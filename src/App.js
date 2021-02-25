@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Card from './Card';
+import CardContainer from './CardContainer';
 
 const pokemon = [
   {id: 4, name: 'Charmander', type: 'fire', base_experience: 62},
@@ -21,7 +22,7 @@ function App() {
       
       <h1>Pokedex</h1>
 
-      <Card/>
+      <CardContainer pokemons={pokemon} />
 
     </div>
   );
