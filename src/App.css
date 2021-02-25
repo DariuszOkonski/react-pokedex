@@ -8,3 +8,20 @@ body {
   background-color: #c9c6c6;
   text-align: center;
 }
+
+.btn {
+  width: 150px;
+  height: 50px;
+  font-size: 1.2rem;
+  border: none;
+  background-color: #4167da;
+  margin: 1rem;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 5px;
+  transition: all .2s ease;
+}
+
+.btn:hover {
+  background-color: #2e53c0;
+}

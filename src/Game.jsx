@@ -29,7 +29,8 @@ const Game = ({pokemons}) => {
     return ( 
         
         <div>
-            <button onClick={handleClick}>Play Again</button>
+            <button className="btn" onClick={handleClick}>Play Again</button>
+            
             <CardContainer pokemons={team_1} hasWon={team_1_result > team_2_result} score={team_1_result} />
 
             <CardContainer pokemons={team_2} hasWon={team_2_result > team_1_result} score={team_2_result} />
