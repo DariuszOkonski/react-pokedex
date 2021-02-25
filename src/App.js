@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Card from './Card';
 
 const pokemon = [
   {id: 4, name: 'Charmander', type: 'fire', base_experience: 62},
@@ -19,6 +20,8 @@ function App() {
     <div className="App">
       
       <h1>Pokedex</h1>
+
+      <Card/>
 
     </div>
   );
