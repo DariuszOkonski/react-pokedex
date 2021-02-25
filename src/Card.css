@@ -1,0 +1,39 @@
+.Card {
+    width: 100%;
+    max-width: 200px;
+    background-color: #fff;
+    padding: 0.5rem;
+    box-shadow: 10px 10px 10px #8d8d8d;
+    margin: 1rem;
+}
+
+.Card__header {
+    font-size: 1.2rem;
+    font-weight: 100;
+    text-align: center;
+    margin: .5rem 0;
+    text-transform: uppercase;
+}
+
+.Card__img {
+    background-color: #d1d1d1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Card__img:hover img {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.Card__img img {
+    width: 80%;
+    transition: .2s ease;
+}
+
+.Card__description {
+    text-align: center;
+    margin: 0.2rem 0;
+    font-weight: 1rem;
+}
