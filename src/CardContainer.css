@@ -4,6 +4,22 @@
     width: 100%;
     /* max-width: 1000px; */
 
+}
+
+.CardContainer__inner {
     display: flex;
     justify-content: space-evenly;
+    
+}
+
+.CardContainer__header {
+    font-size: 1.6rem;
+}
+
+.winner {
+    color: green;
+}
+
+.looser {
+    color: red;
 }

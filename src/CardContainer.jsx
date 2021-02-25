@@ -2,14 +2,20 @@ import React from 'react';
 import Card from './Card';
 import './CardContainer.css';
 
-const CardContainer = ({pokemons}) => {
+const CardContainer = ({pokemons, hasWon, score}) => {
+    let colorClass = hasWon ? 'CardContainer__header winner' : 'CardContainer__header looser'
 
-    console.log(pokemons)
     return ( 
         <div className="CardContainer">
-            {
-                pokemons.map(pokemon => <Card key={pokemon.id} {...pokemon} />)
-            }            
+            <p className={colorClass}>{hasWon ? 'Winner': 'Looser'}</p>
+            <p className='CardContainer__header'>score: {score}</p>
+
+            <div className="CardContainer__inner">
+                {
+                    pokemons.map(pokemon => <Card key={pokemon.id} {...pokemon} />)
+                } 
+
+            </div>
         </div>
      );
 }
